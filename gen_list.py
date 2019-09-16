@@ -24,12 +24,12 @@ if __name__ == "__main__":
     try:
         with open("user_rule.txt", "r", encoding="utf-8") as f:
             user_rule = f.read()
-            print("user_rule:\n" + user_rule)
+            print("user rule:\n" + user_rule)
     except FileNotFoundError:
         print("user_rule.txt不能存在")
         exit(0)
 
-    print("正在下载gfwlist.txt ...")
+    print("\n正在下载gfwlist.txt ...")
     try:
         response = requests.get("https://bitbucket.org/gfwlist/gfwlist/raw/HEAD/gfwlist.txt")
         gfwlist = base64.b64decode(response.text)
