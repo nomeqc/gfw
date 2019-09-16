@@ -43,10 +43,11 @@ if __name__ == "__main__":
     print("list.txt已经生成成功。")
 
     os.system('git add .')
-    print('正在提交...')
+    print('\n正在提交...')
     os.system('git commit -m "update user rule"')
-    print('正在推送到github')
+    print('\n正在推送到github')
     os.system('git push -u origin master')
+    print('\n')
     
     
 
