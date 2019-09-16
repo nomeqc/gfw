@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-import requests, base64
+import requests, base64, os
 
 
 def gen_base64(s):
@@ -42,7 +42,11 @@ if __name__ == "__main__":
         f.write(content)
     print("list.txt已经生成成功。")
 
-
+    os.system('git add .')
+    print('正在提交...')
+    os.system('git commit -m "update user rule"')
+    print('正在推送到github')
+    os.system('git push -u origin master')
     
     
 
