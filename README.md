@@ -1,2 +1,2 @@
-# gfw
+# gfwlist
 My Custom gfwlist
