@@ -24,7 +24,7 @@ if __name__ == "__main__":
     try:
         with open("user_rule.txt", "r", encoding="utf-8") as f:
             user_rule = f.read()
-            print("user rule:\n" + user_rule)
+            print("用户规则:\n" + user_rule)
     except FileNotFoundError:
         print("user_rule.txt不能存在")
         exit(0)
